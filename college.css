@@ -1,0 +1,117 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #6a0dad;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #6a0dad;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #d8b3ff;
+    text-align: center;
+    padding: 30px;
+    font-size: 1.2rem;
+}
+
+/* Course Sections */
+.course-section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-section h2 {
+    color: #6a0dad;
+    text-align: center;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #6a0dad;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f2ff;
+}
+
+tr:hover {
+    background-color: #e6ccff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #6a0dad;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 1rem;
+}

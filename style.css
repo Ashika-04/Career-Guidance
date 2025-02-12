@@ -1,0 +1,367 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: rgb(127, 25, 223);
+    flex-wrap: wrap;
+}
+.logo {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    display: block;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header img {
+    margin-right: 10px;
+}
+
+header h4 {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 20px;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: white;
+    font-size: 1rem;
+    padding: 8px 15px;
+}
+
+header nav a:hover {
+    color: rgb(9, 2, 2);
+}
+
+nav.login {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+/* Responsive Header */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav.login {
+        margin-left: 0;
+    }
+}
+
+img[alt="Career Guidance Banner"] {
+    width: 100%;
+    height: 500px;
+    margin: 10px 0;
+    display: block;
+}
+
+h3 {
+    color: blueviolet;
+    font-size: 1.5cm;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.body1 {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.body1 div {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.7cm;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+
+.body1 img {
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.body2 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+}
+.body2 div {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.7cm;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    line-height: 1.5;
+}    
+.content1, .content2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.content1 img, .content2 img {
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.content1 h4, .content2 h4 {
+    color: darkblue;
+    font-size: 1cm;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content1 p, .content2 p {
+    font-size: 0.7cm;
+    line-height: 1.5;
+    color: #333;
+}
+
+.mission, .vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    
+}
+
+.mission img, .vision img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.mission p, .vision p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.7cm;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: lighter;
+}
+
+footer {
+    background-color:rgb(127, 25, 223);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+footer nav{
+    text-align:center;
+}
+footer nav a
+{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+}
+footer nav a:hover{
+    color:black;
+}
+
+
+footer p {
+    font-size: 1rem;
+    margin: 5px 0px;
+}
+#contactus h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+}
+#contactus a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+#contactus a:hover{
+    color: black;
+}
+#contactus {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .body1 {
+        flex-direction: column;
+    }
+
+    .body2 {
+        flex-direction: column;
+    }
+
+    .content1, .content2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content1 img, .content2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .body1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .mission img, .vision img {
+        width: 100%;
+        height: auto;
+    }
+}
+#school_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.tenth, .twelveth {
+    background-color: plum;
+    margin: 10px 10px 10px;
+    padding: 6px 5px;
+    border-radius: 5px 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:1000px;
+    text-align: center;
+}
+
+.tenth .content, .twelveth .content {
+    flex: 1;
+    padding-right: 10px;
+}
+
+.tenth h4, .twelveth h4 {
+    color: white;
+    font-size: .7cm;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#para {
+    font-size: large;
+    font-weight: lighter;
+    color: gray;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.tenth p, .twelveth p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: medium;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.tenth img, .twelveth img {
+    border-radius: 5px;
+}
+.tenth button{
+    border: none;
+    background-color:rgb(198, 38, 198);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition:color 0.2s all ease;
+    cursor: pointer;
+  }
+
+  .tenth button:hover {
+    background-color: black;
+    color:white;
+  }
+  .twelveth button{
+    border: none;
+    background-color:rgb(198, 38, 198);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition:color 0.2s all ease;
+    cursor: pointer;
+  }
+
+  .twelveth button:hover {
+    background-color: black;
+    color:white;
+  }
+  .tenth button a,.twelveth button a{
+    text-decoration: none;
+    color: white;
+  }
