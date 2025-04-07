@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book My Session</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <h1>Book a Counseling Session</h1>
+    
+    <form id="bookingForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" placeholder="Enter your phone number" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="educationLevel">Education Level:</label>
+        <select id="educationLevel" required>
+            <option value="" disabled selected>Select your level</option>
+            <option value="10th">10th Standard</option>
+            <option value="12th">12th Standard</option>
+            <option value="college">College Student</option>
+        </select>
+
+        <label for="expertDropdown">Choose Expert:</label>
+        <select id="expertDropdown" required>
+            <option value="" disabled selected>Select an expert</option>
+            <option value="Dr. Rahul Sharma">Dr. Rahul Sharma - 10th Grade Career Guidance</option>
+            <option value="Ms. Priya Verma">Ms. Priya Verma - 12th Grade Subject Selection</option>
+            <option value="Dr. Anjali Menon">Dr. Anjali Menon - College Admissions Expert</option>
+            <option value="Mr. Sanjay Patel">Mr. Sanjay Patel - Scholarship and Grants</option>
+            <option value="Dr. Kavita Iyer">Dr. Kavita Iyer - Engineering Career Advice</option>
+            <option value="Prof. Rohit Bansal">Prof. Rohit Bansal - Medical Career Guidance</option>
+            <option value="Dr. Neha Gupta">Dr. Neha Gupta - Law and Humanities Guidance</option>
+            <option value="Mr. Aditya Raj">Mr. Aditya Raj - Overseas Study Consultant</option>
+            <option value="Ms. Swati Sharma">Ms. Swati Sharma - Arts & Design Career</option>
+            <option value="Dr. Aman Kapoor">Dr. Aman Kapoor - IT & Software Industry</option>
+        </select>
+
+        <label for="sessionDate">Session Date:</label>
+        <input type="date" id="sessionDate" required>
+
+        <label for="sessionTime">Session Time:</label>
+        <input type="time" id="sessionTime" required>
+
+        <button type="submit">Confirm Booking</button>
+    </form>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+
+    <script>
+        document.getElementById("bookingForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const date = document.getElementById("sessionDate").value;
+            const time = document.getElementById("sessionTime").value;
+
+            const phoneRegex = /^[0-9]{10}$/;
+            if (!phoneRegex.test(phone)) {
+                alert("Please enter a valid 10-digit phone number.");
+                return;
+            }
+            if (!email.includes("@")) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+            alert("Booking Confirmed! We will contact you soon.");
+        });
+    </script>
+</body>
+</html>

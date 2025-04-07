@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counseling Sessions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Counseling Sessions</h1>
+    </header>
+    
+    <section class="experts">
+        <h2>Meet Our Experts</h2>
+        <div class="expert-list" id="expert-list"></div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Student Testimonials</h2>
+        <div class="testimonial-list" id="testimonial-list"></div>
+    </section>
+
+    <div class="booking">
+        <button id="book-session">Book My Session</button>
+    </div>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 1rem;
+        }
+        .experts, .testimonials {
+            margin: 20px;
+        }
+        .expert-list, .testimonial-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .expert, .testimonial {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            width: 250px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .booking button {
+            background: #28a745;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .booking button:hover {
+            background: #218838;
+        }
+    </style>
+
+    <script>
+        const experts = [
+            { name: "Dr. Rahul Sharma", field: "10th Grade Career Guidance" },
+            { name: "Ms. Priya Verma", field: "12th Grade Subject Selection" },
+            { name: "Dr. Anjali Menon", field: "College Admissions Expert" },
+            { name: "Mr. Sanjay Patel", field: "Scholarship and Grants" },
+            { name: "Dr. Kavita Iyer", field: "Engineering Career Advice" },
+            { name: "Prof. Rohit Bansal", field: "Medical Career Guidance" },
+            { name: "Dr. Neha Gupta", field: "Law and Humanities Guidance" },
+            { name: "Mr. Aditya Raj", field: "Overseas Study Consultant" },
+            { name: "Ms. Swati Sharma", field: "Arts & Design Career" },
+            { name: "Dr. Aman Kapoor", field: "IT & Software Industry" }
+        ];
+
+        const testimonials = [
+            { student: "Amit Kumar", feedback: "The guidance helped me choose the right stream in 11th!" },
+            { student: "Sneha Reddy", feedback: "I secured a scholarship thanks to my mentor's advice." },
+            { student: "Rajesh Verma", feedback: "Cleared my confusion between medicine and engineering." }
+        ];
+
+        function loadExperts() {
+            const expertList = document.getElementById("expert-list");
+            experts.forEach(expert => {
+                const div = document.createElement("div");
+                div.classList.add("expert");
+                div.innerHTML = `<h3>${expert.name}</h3><p>${expert.field}</p>`;
+                expertList.appendChild(div);
+            });
+        }
+
+        function loadTestimonials() {
+            const testimonialList = document.getElementById("testimonial-list");
+            testimonials.forEach(testimonial => {
+                const div = document.createElement("div");
+                div.classList.add("testimonial");
+                div.innerHTML = `<p>"${testimonial.feedback}"</p><h4>- ${testimonial.student}</h4>`;
+                testimonialList.appendChild(div);
+            });
+        }
+
+        document.getElementById("book-session").addEventListener("click", () => {
+            alert("Redirecting to booking page...");
+            window.location.href = "booking.html"; // Redirect to the booking page
+        });
+
+        window.onload = () => {
+            loadExperts();
+            loadTestimonials();
+        };
+    </script>
+</body>
+</html>
